@@ -13,6 +13,7 @@ inputs:
 
 outputs:
   matches:
+    value: ${{ steps.extract.outputs.matches }}
     description: 'A JSON array (single line) containing the extracted substrings in the same order the patterns were supplied.'
 
 runs:
